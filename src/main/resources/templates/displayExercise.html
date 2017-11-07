@@ -6,10 +6,17 @@
 
 </head>
 
-<body>
+<body bgcolor="#99CC66">
     <!--exercise dexcription:-->
-    <center><h1>Method Exercise</h1></center>
-    <p th:if="${message}!=null" th:text="${message}"></p>
+    <center><h1>Method Exercise - average</h1></center>
+    <hr>
+    <!--<p th:if="${message}!=null" th:text="${message}"></p>-->
+        <font size="4" color="#4D4D4D">
+            <!--loop thru List of string-->
+            <p th:if="${message}!=null" th:each="message : ${message}"
+               th:text="${message}">Test</p>
+        </font>
+    <hr>
     <!--exercise image:-->
     <img src="img/NetCalculator.png" style="max-width:100%;">
 </body>

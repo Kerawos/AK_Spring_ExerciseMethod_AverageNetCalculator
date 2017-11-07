@@ -13,7 +13,7 @@ public class MainController {
     @GetMapping("/")
     public String indexGet(Model model) throws IOException {
         //display to user *dexcription
-        model.addAttribute("message", ReadFileToString.readFile("description.txt"));
+        model.addAttribute("message", ReadFileToString.readFileToArray("description.txt"));
         return "displayExercise";
     }
 }
