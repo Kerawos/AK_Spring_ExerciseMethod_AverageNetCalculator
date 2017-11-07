@@ -5,7 +5,9 @@ Methods exercise - average
 
 Your task is to implement method called 'salaryNetCalculator' to calculate net salary from gross. To acomplished this
 you have to implement '//todo' methods.
+
 As you see methods like 'roundFinancial', 'calcMedicalInsurance' are already implemented, also final variables are declared.
+
 Focus to implements every function in proper order founded below.
 
     !Important - make "NetCalculator.png" your good friend - there is schema how to methods should work graphically
