@@ -2,6 +2,8 @@ package pl.akademiakodu.MethodsExerciseSpring.models;
 
 public class SalaryCalculator {
 
+
+
     //method to calculate net salary from gross
     public double salaryNetCalculator(double grossAmount, double bonus, int distanceFromWorkPlace){
         //todo

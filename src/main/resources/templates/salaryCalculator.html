@@ -8,5 +8,30 @@
 <hr>
 <img src="img/NetCalculatorNav.png" style="max-width:100%;">
 <hr>
+
+    <form method="post" th:action="@{/calc}" th:object="${employeeModel}">
+
+        enter gross salary: <input type="text" th:field="*{gross}" placeholder="gross">
+        <br>
+        enter bonus to salary: <input type="text" th:field="*{bonus}" placeholder="bonus">
+        <br>
+        enter distance from work: <input type="text" th:field="*{distanceFromWork}" placeholder="distance from work">
+        <br>
+        <input type="submit" value="Calculate Net Salary" >
+        <br>
+    </form>
+
+<hr>
+
+    <p th:if="${message1}!=null" th:text="${message1}"></p>
+    <p th:if="${message2}!=null" th:text="${message2}"></p>
+    <p th:if="${message3}!=null" th:text="${message3}"></p>
+    <p th:if="${message4}!=null" th:text="${message4}"></p>
+    <p th:if="${message5}!=null" th:text="${message5}"></p>
+    <p th:if="${message6}!=null" th:text="${message6}"></p>
+
+<hr>
+
+
 </body>
 </html>
