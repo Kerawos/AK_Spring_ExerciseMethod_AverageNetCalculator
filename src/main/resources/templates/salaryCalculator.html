@@ -20,17 +20,26 @@
         <input type="submit" value="Calculate Net Salary" >
         <br>
     </form>
-
 <hr>
+    <font size="4" color="#4D4D4D">
+        <p th:if="${message1}!=null" th:text="${message1}"></p>
+        <p th:if="${message2}!=null" th:text="${message2}"></p>
+        <p th:if="${message3}!=null" th:text="${message3}"></p>
+        <p th:if="${message4}!=null" th:text="${message4}"></p>
+        <br>
+        <p th:if="${message5}!=null" th:text="${message5}"></p>
+        <p th:if="${message6}!=null" th:text="${message6}"></p>
+        <hr>
+        <i>
+            <footer>
+                <b><p>EXPECTED RESULTS SHOULD BE:</p></b>
+                <p>Gross: 15687, Bonus: 1200, Distance: 5 -> Net: 9773.34</p>
+                <p>Gross: 1250, Bonus: 20, Distance: 0 -> Net: 949.25</p>
+                <p>Gross: 3000, Bonus: 0, Distance: 15 -> Net: 2155.72</p>
+            </footer>
+        </i>
+    </font>
 
-    <p th:if="${message1}!=null" th:text="${message1}"></p>
-    <p th:if="${message2}!=null" th:text="${message2}"></p>
-    <p th:if="${message3}!=null" th:text="${message3}"></p>
-    <p th:if="${message4}!=null" th:text="${message4}"></p>
-    <p th:if="${message5}!=null" th:text="${message5}"></p>
-    <p th:if="${message6}!=null" th:text="${message6}"></p>
-
-<hr>
 
 
 </body>

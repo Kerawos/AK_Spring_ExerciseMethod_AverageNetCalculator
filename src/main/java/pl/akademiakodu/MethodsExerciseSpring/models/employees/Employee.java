@@ -1,5 +1,6 @@
 package pl.akademiakodu.MethodsExerciseSpring.models.employees;
 
+//employee model
 public class Employee {
     private double gross;
     private double bonus;

@@ -12,8 +12,8 @@ public class MedicalInsurance {
     }
 
     public double calcMedicalInsurance(double grossAfterZUS){
-        //todo
-        return 0;
-        //return FinancialData2017.roundFinancial(grossAfterZUS * FinancialData2017.getRateMedicalInsurance());
+//        //todo
+//        return 0;
+        return FinancialData2017.roundFinancial(grossAfterZUS * FinancialData2017.getRateMedicalInsurance());
     }
 }
