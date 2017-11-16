@@ -1,4 +1,4 @@
-package pl.akademiakodu.MethodsExerciseSpring.models;
+package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models;
 
 //holder for financial statics from 2017
 public class FinancialData2017 {

@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>pl.akademiakodu</groupId>
-	<artifactId>MethodsExerciseSpring</artifactId>
+	<artifactId>AK_MethodsExerciseSpring_AverageNetCalculator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>MethodsExerciseSpring</name>
-	<description>AK_MethodsExerciseSpring</description>
+	<description>AK_MethodsExerciseSpring_AverageNetCalculator</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

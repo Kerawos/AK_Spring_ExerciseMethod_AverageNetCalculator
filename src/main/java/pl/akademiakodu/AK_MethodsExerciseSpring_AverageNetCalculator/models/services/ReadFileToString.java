@@ -1,4 +1,4 @@
-package pl.akademiakodu.MethodsExerciseSpring.models.services;
+package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models.services;
 
 import java.io.*;
 import java.util.ArrayList;

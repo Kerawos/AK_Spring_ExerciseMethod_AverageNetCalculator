@@ -1,4 +1,4 @@
-package pl.akademiakodu.MethodsExerciseSpring.models.employees;
+package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models.employees;
 
 //employee model
 public class Employee {

@@ -1,4 +1,4 @@
-package pl.akademiakodu.MethodsExerciseSpring;
+package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

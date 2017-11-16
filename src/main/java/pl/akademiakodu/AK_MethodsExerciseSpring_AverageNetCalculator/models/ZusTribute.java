@@ -1,4 +1,4 @@
-package pl.akademiakodu.MethodsExerciseSpring.models;
+package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models;
 
 public class ZusTribute {
     private static ZusTribute ourInstance = new ZusTribute();

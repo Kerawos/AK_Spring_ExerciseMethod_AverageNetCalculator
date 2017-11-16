@@ -1,11 +1,11 @@
-package pl.akademiakodu.MethodsExerciseSpring.controllers;
+package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import pl.akademiakodu.MethodsExerciseSpring.models.SalaryCalculator;
-import pl.akademiakodu.MethodsExerciseSpring.models.employees.Employee;
-import pl.akademiakodu.MethodsExerciseSpring.models.services.ReadFileToString;
+import pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models.SalaryCalculator;
+import pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models.employees.Employee;
+import pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models.services.ReadFileToString;
 
 
 import java.io.IOException;
@@ -21,7 +21,7 @@ public class MainController {
     @GetMapping("/desc")
     public String indexDesc(Model model) throws IOException {
         //display to user *dexcription
-        model.addAttribute("message", ReadFileToString.readFileToArray("description.txt"));
+        model.addAttribute("message", ReadFileToString.readFileToArray("Redame.md"));
         return "textDescription";
     }
 
