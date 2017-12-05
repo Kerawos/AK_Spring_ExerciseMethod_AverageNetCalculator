@@ -1,7 +1,20 @@
-package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models;
+package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models.services;
 
+/**
+ * Imports section
+ */
+import org.springframework.stereotype.Service;
+import pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models.FinancialData2017;
+
+/**
+ * Service responsible for calculations of potential advance of income tax.
+ */
+@Service
 public class AdvanceOfIncomeTax {
 
+    /**
+     * In this example this service will be singleton
+     */
     private static AdvanceOfIncomeTax ourInstance = new AdvanceOfIncomeTax();
 
     public static AdvanceOfIncomeTax getInstance() {
@@ -11,10 +24,13 @@ public class AdvanceOfIncomeTax {
     private AdvanceOfIncomeTax() {
     }
 
+    /**
+     * Method calculate advance of income tax
+     * @param grossAfterZus already calculated gross salary after zus tribute
+     * @param distanceFromWorkPlace
+     * @return advance of income tax
+     */
     public int calcAdvanceOfIncomeTax(double grossAfterZus, int distanceFromWorkPlace){
-//        //todo
-//        return 0;
-        //calc income cost
         double advanceForIncomeTax = grossAfterZus - calcIncomeCost(distanceFromWorkPlace);
         if (advanceForIncomeTax < FinancialData2017.getIncomeTaxThreshold()){
             advanceForIncomeTax =  FinancialData2017.roundFinancial((advanceForIncomeTax * FinancialData2017.getTaxThresholdFirst()));
@@ -26,27 +42,36 @@ public class AdvanceOfIncomeTax {
         return (int)advanceForIncomeTax;
     }
 
+    /**
+     * Method calculate cost of income
+     * @param distanceFromWorkPlace
+     * @return
+     */
     public double calcIncomeCost(int distanceFromWorkPlace){
-//        //todo
-//        return 0;
         if (isLocal(distanceFromWorkPlace)){
             return FinancialData2017.getIncomeAmountLocal();
         }
         return FinancialData2017.getIncomeAmountOutside();
     }
 
+    /**
+     * Method checks if user is life nearby work area
+     * @param distanceFromWorkPlace
+     * @return
+     */
     public boolean isLocal(int distanceFromWorkPlace){
-//        //todo
-//        return true;
         if (distanceFromWorkPlace > FinancialData2017.getDistanceMaxToWork()){
             return false;
         }
         return true;
     }
 
+    /**
+     * Method calculate health insurance commission
+     * @param grossAfterZUS
+     * @return
+     */
     public double calcTempHealthTribute(double grossAfterZUS){
-//        //todo
-//        return 0;
         return FinancialData2017.roundFinancial(grossAfterZUS * FinancialData2017.getTaxHealthTemp());
     }
 }

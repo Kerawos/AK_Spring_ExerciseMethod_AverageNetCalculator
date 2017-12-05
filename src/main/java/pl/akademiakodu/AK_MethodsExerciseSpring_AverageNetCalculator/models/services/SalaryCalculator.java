@@ -1,17 +1,25 @@
-package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models;
+package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models.services;
 
+/**
+ * Imports section
+ */
+import org.springframework.stereotype.Service;
+import pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models.FinancialData2017;
+
+/**
+ * Service responsible for general calculations of potential net salary.
+ */
+@Service
 public class SalaryCalculator {
 
-
-
-    //method to calculate net salary from gross
+    /**
+     * Method to calculate net salary from gross
+     * @param grossAmount
+     * @param bonus
+     * @param distanceFromWorkPlace
+     * @return net salary
+     */
     public double salaryNetCalculator(double grossAmount, double bonus, int distanceFromWorkPlace){
-//        //todo
-//        //1 calc total base
-//        //2 calc zus tribute
-//        //3 calc healthTribute
-//        //4 calc advanceForIncomeTax
-//        return 0;
 
         //1 calc total base
         double grossBase = grossAmount + bonus;

@@ -3,6 +3,9 @@ package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * Spring boot
+ */
 @SpringBootApplication
 public class MethodsExerciseSpringApplication {
 

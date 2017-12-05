@@ -1,9 +1,13 @@
 package pl.akademiakodu.AK_MethodsExerciseSpring_AverageNetCalculator.models;
 
-//holder for financial statics from 2017
+/**
+ * Class as holder for financial statics from 2017
+ */
 public class FinancialData2017 {
 
-    //declaration & initialization our variables
+    /**
+     * Declaration & initialization our variables
+     */
     private static final double incomeTaxThreshold = 7127.333333333333;
     private static final double taxThresholdFirst = 0.18;
     private static final double taxThresholdSecond = 0.32;
@@ -17,11 +21,18 @@ public class FinancialData2017 {
     private static final double rateSicknessContribution = 0.0245;
     private static final int distanceMaxToWork = 10;
 
-    //method to rounded two decimal places (without using BigDecimals)
+    /**
+     * Method to rounded two decimal places (without using BigDecimals)
+     * @param amountToRounded
+     * @return
+     */
     public static double roundFinancial( double amountToRounded){
         return Math.round(amountToRounded*100.0)/100.0;
     }
 
+    /**
+     * Getters section
+     */
     public static double getIncomeTaxThreshold() {
         return incomeTaxThreshold;
     }
