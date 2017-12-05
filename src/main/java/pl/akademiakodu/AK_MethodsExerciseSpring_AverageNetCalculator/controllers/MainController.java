@@ -29,7 +29,7 @@ public class MainController {
      * @return index template
      */
     @GetMapping("/")
-    public String indexWelcome(Model model) throws IOException {
+    public String indexWelcome() throws IOException {
         return "welcomeScreen";
     }
 
@@ -39,7 +39,6 @@ public class MainController {
      */
     @GetMapping("/desc")
     public String indexDesc(Model model) throws IOException {
-        //display to user *dexcription
         model.addAttribute("message", ReadFileToString.readFileToArray("Redame.md"));
         return "textDescription";
     }
@@ -49,7 +48,7 @@ public class MainController {
      * @return graph template
      */
     @GetMapping("/graph")
-    public String indexGraph(Model model) throws IOException {
+    public String indexGraph() throws IOException {
         return "graphDescription";
     }
 
